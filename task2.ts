@@ -1,36 +1,38 @@
 // Sum
-function add(num1: number, num2: number): number {
+function add(num1, num2) {
   return num1 + num2;
 }
-
-function checkEvenOrOdd(num: number): string {
+function checkEvenOrOdd(num) {
   return num % 2 === 0 ? 'Even' : 'Odd';
 }
 // clculate area
-function calculateArea(width: number, height: number): number {
+function calculateArea(width, height) {
   return width * height;
 }
 // reversal  string
-function reverseString(inputString: string): string {
+function reverseString(inputString) {
   return inputString.split('').reverse().join('');
 }
 //Conversion  Temperature
-function convertCelsiusToFahrenheit(celsius: number): number {
+function convertCelsiusToFahrenheit(celsius) {
   return (celsius * 9) / 5 + 32;
 }
-
-// Example usage:
-const sum: number = add(5, 10);
+//add 2 numbers
+var sum = add(5, 10);
 console.log('Sum:', sum);
 
-const checkEvenOdd: string = checkEvenOrOdd(7);
+//check value even or odd
+var checkEvenOdd = checkEvenOrOdd(7);
 console.log('Check Even or Odd:', checkEvenOdd);
 
-const area: number = calculateArea(3, 4);
+//calculate area 
+var area = calculateArea(3, 4);
 console.log('Area:', area);
 
-const reversedString: string = reverseString('hello');
+//revearsed the string value
+var reversedString = reverseString('Muneeb');
 console.log('Reversed String:', reversedString);
 
-const fahrenheitTemp: number = convertCelsiusToFahrenheit(25);
+//convert temprature to farhanitrate
+var fahrenheitTemp = convertCelsiusToFahrenheit(25);
 console.log('Fahrenheit Temperature:', fahrenheitTemp);
